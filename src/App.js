@@ -33,7 +33,9 @@ function App() {
           </Routes>
         </>
       ) : (
-        <LoginButton onLogin={handleLogin} />
+        <>
+          <Header />
+        </>
       )}
     </div>
   );

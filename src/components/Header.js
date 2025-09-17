@@ -1,11 +1,11 @@
 import logo from '../images/logo-nav.svg';
 import { Link } from 'react-router-dom';
 import '../App.css';
-import { LogoutButton } from './LogInOutButton';
+import { LoginButton, LogoutButton } from './LogInOutButton';
 import { useLog } from '../Hooks/LogContext';
 
 function Header() {
-  const { logout } = useLog();
+  const { logout, isLoggedIn, login } = useLog();
 
   return (
     <header className='App-header'>
@@ -27,7 +27,11 @@ function Header() {
           Order Online
         </Link>
       </nav>
-      <LogoutButton onLogout={logout} />
+      {!isLoggedIn ? (
+        <LoginButton onLogin={login} />
+      ) : (
+        <LogoutButton onLogout={logout} />
+      )}
     </header>
   );
 }
