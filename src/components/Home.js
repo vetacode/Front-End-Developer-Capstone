@@ -1,5 +1,5 @@
 import logo from '../images/logo-nav.svg';
-// import ReactVideo from './components/ReactVideo';
+import Footer from './Footer';
 
 function Home() {
   return (
@@ -14,7 +14,8 @@ function Home() {
           </p>
         </div>
       </div>
-      {/* <ReactVideo /> */}
+
+      <Footer />
     </>
   );
 }

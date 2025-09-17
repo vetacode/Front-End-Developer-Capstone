@@ -21,12 +21,15 @@
   color: white;
   gap: 4rem;
   padding: 20px;
+  border: solid #495e57 2px;
 }
 
 nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
+  color: #495e57;
 }
 
 ul {
@@ -50,11 +53,7 @@ nav a {
 }
 
 nav a:hover {
-  /* text-decoration: underline; */
   color: rgb(0, 0, 0);
-  /* cursor: pointer; */
-  /* font-size: 1.2rem; */
-  /* transform: scale(1.1); */
 }
 
 nav a::after {
@@ -103,7 +102,7 @@ li {
 }
 
 .btn {
-  background-color: #61fbd2;
+  background-color: #f4ce14;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -114,13 +113,13 @@ li {
   color: #282c34;
 }
 .btn:hover {
-  background-color: rgb(83, 212, 191);
+  background-color: #fbdabb;
   transition: ease-in-out 0.3s;
   color: #282c34;
   font-style: bold;
 }
 
 .btn:active {
-  background-color: #58fff1;
+  background-color: #ee9972;
   transform: scale(0.95);
 }

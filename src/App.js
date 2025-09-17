@@ -1,26 +1,22 @@
 import './App.css';
 import Header from './components/Header';
-import Main from './components/Main';
-import Footer from './components/Footer';
+import { OrderOnline } from './components/OrderOnline';
 import { Routes, Route, useNavigate } from 'react-router-dom';
-import { useState } from 'react';
 import Home from './components/Home';
 import About from './components/About';
-import Contact from './components/Contact';
-import { LogoutButton, LoginButton } from './components/LogInOutButton';
+import Menu from './components/Menu';
+import { LoginButton } from './components/LogInOutButton';
+import { BookingPage } from './components/BookingPage';
+import { useLog, LogProvider } from './Hooks/LogContext';
 
 function App() {
-  const [isLoggedIn, setIsloggedIn] = useState(false);
+  const { isLoggedIn, login } = useLog();
 
   const navigate = useNavigate();
 
-  const login = () => {
-    setIsloggedIn(true);
+  const handleLogin = () => {
+    login();
     navigate('/');
-  };
-
-  const logout = () => {
-    setIsloggedIn(false);
   };
 
   return (
@@ -31,18 +27,24 @@ function App() {
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/About' element={<About />} />
-            <Route path='/Contact' element={<Contact />} />
+            <Route path='/Menu' element={<Menu />} />
+            <Route path='/BookingPage' element={<BookingPage />} />
+            <Route path='/OrderOnline' element={<OrderOnline />} />
           </Routes>
-
-          <LogoutButton onLogout={logout} />
-          <Main />
-          <Footer />
         </>
       ) : (
-        <LoginButton onLogin={login}>Login</LoginButton>
+        <LoginButton onLogin={handleLogin} />
       )}
     </div>
   );
 }
 
-export default App;
+function Root() {
+  return (
+    <LogProvider>
+      <App />
+    </LogProvider>
+  );
+}
+
+export default Root;
