@@ -1,10 +1,28 @@
 import logo from '../images/logo-nav.svg';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
     <header className='App-header'>
       <img src={logo} className='App-logo' alt='logo' />
-      <nav>
+      <nav className='nav'>
+        <Link to='/' className='nav-item'>
+          Home
+        </Link>
+        <Link to='/About' className='nav-item'>
+          About
+        </Link>
+        <Link to='/Contact' className='nav-item'>
+          Contact
+        </Link>
+      </nav>
+    </header>
+  );
+}
+
+export default Header;
+
+/* <nav>
         <ul>
           <li>
             <a href='#home'>Home</a>
@@ -28,9 +46,4 @@ function Header() {
             <a href='#login'>Login</a>
           </li>
         </ul>
-      </nav>
-    </header>
-  );
-}
-
-export default Header;
+      </nav> */
