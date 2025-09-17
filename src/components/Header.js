@@ -3,9 +3,16 @@ import { Link } from 'react-router-dom';
 import '../App.css';
 import { LoginButton, LogoutButton } from './LogInOutButton';
 import { useLog } from '../Hooks/LogContext';
+import { useNavigate } from 'react-router-dom';
 
 function Header() {
   const { logout, isLoggedIn, login } = useLog();
+
+  const navigate = useNavigate();
+  const handleLogin = () => {
+    login();
+    navigate('/');
+  };
 
   return (
     <header className='App-header'>
@@ -28,7 +35,7 @@ function Header() {
         </Link>
       </nav>
       {!isLoggedIn ? (
-        <LoginButton onLogin={login} />
+        <LoginButton onLogin={handleLogin} />
       ) : (
         <LogoutButton onLogout={logout} />
       )}
