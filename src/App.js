@@ -2,7 +2,7 @@ import './App.css';
 import Header from './components/Header';
 import { OrderOnline } from './components/OrderOnline';
 import { Routes, Route } from 'react-router-dom';
-import Home from './components/Home';
+import Home from './components/Home/Home';
 import About from './components/About';
 import Menu from './components/Menu';
 import { BookingPage } from './components/BookingPage';

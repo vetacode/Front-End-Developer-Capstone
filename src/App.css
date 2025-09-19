@@ -5,7 +5,16 @@
 }
 
 .App {
-  text-align: center;
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1232px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin: 0 auto;
+  gap: 4rem;
 }
 
 .App-logo {
@@ -14,20 +23,21 @@
 }
 
 .App-header {
-  background-color: #edefee;
   display: flex;
+
   align-items: center;
   justify-content: space-between;
-  color: white;
+  width: 90vw;
+  background-color: #edefee;
   gap: 4rem;
   padding: 20px;
-  border: solid #495e57 2px;
+  /* border: solid #495e57 2px; */
 }
 
 nav {
+  margin: 0;
+  padding: 0;
   display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
   gap: 3rem;
   color: #495e57;
   flex-wrap: wrap;
@@ -62,7 +72,7 @@ nav a {
   display: inline-block;
   color: rgb(0, 0, 0);
   transition: all 0.1s ease-in-out;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 nav a:hover {

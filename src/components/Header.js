@@ -15,31 +15,33 @@ function Header() {
   };
 
   return (
-    <header className='App-header'>
-      <img src={logo} className='App-logo' alt='logo' />
-      <nav className='nav'>
-        <Link to='/' className='nav-item'>
-          Home
-        </Link>
-        <Link to='/About' className='nav-item'>
-          About
-        </Link>
-        <Link to='/Menu' className='nav-item'>
-          Menu
-        </Link>
-        <Link to='/BookingPage' className='nav-item'>
-          Reservations
-        </Link>
-        <Link to='/OrderOnline' className='nav-item'>
-          Order Online
-        </Link>
-      </nav>
-      {!isLoggedIn ? (
-        <LoginButton onLogin={handleLogin} />
-      ) : (
-        <LogoutButton onLogout={logout} />
-      )}
-    </header>
+    <div className='App'>
+      <header className='App-header'>
+        <img src={logo} height={50} className='App-logo' alt='logo' />
+        <nav className='nav'>
+          <Link to='/' className='nav-item'>
+            Home
+          </Link>
+          <Link to='/About' className='nav-item'>
+            About
+          </Link>
+          <Link to='/Menu' className='nav-item'>
+            Menu
+          </Link>
+          <Link to='/BookingPage' className='nav-item'>
+            Reservations
+          </Link>
+          <Link to='/OrderOnline' className='nav-item'>
+            Order Online
+          </Link>
+        </nav>
+        {!isLoggedIn ? (
+          <LoginButton onLogin={handleLogin} />
+        ) : (
+          <LogoutButton onLogout={logout} />
+        )}
+      </header>
+    </div>
   );
 }
 
