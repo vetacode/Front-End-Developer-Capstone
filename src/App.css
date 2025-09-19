@@ -66,21 +66,23 @@ nav a {
 }
 
 nav a:hover {
-  color: rgb(0, 0, 0);
+  color: black;
 }
 
 nav a::after {
   content: '';
   position: absolute;
   left: 0;
-  bottom: 0; /* sits right under text */
+  bottom: -2px; /* sits right under text */
   width: 0;
-  height: 2px;
-  background: black;
+  height: 3px;
+  /* background: black; */
+  background: #f4ce14;
   transition: width 0.3s ease;
 }
 nav a:hover::after {
   width: 100%;
+  /* color: #f4ce14; */
 }
 
 li {
