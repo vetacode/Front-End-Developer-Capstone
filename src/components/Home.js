@@ -9,7 +9,7 @@ function Home() {
         <div className='home-content'>
           <img src={logo} height={200} width={200} alt='logo' />
           <p>
-            This is the homepage of FiqrieRahman Company Ltd. on React
+            This is the homepage of Little Lemon Company Ltd. on React
             application.
           </p>
         </div>
