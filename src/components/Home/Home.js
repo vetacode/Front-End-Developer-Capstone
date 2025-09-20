@@ -1,4 +1,4 @@
-import hero from '../../images/hero-image.svg';
+import hero from '../../assets/images/hero-image.svg';
 import Footer from '../Footer';
 
 function Home() {

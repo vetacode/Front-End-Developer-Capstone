@@ -1,4 +1,4 @@
-import logo from '../images/logo-nav.svg';
+import logo from '../assets/images/logo-nav.svg';
 import { Link } from 'react-router-dom';
 import '../App.css';
 import { LoginButton, LogoutButton } from './LogInOutButton';
@@ -17,7 +17,7 @@ function Header() {
   return (
     <div>
       <header className='App-header'>
-        <img src={logo} height={50} className='App-logo' alt='logo' />
+        <img src={logo} height={60} className='App-logo' alt='logo' />
         <nav className='nav'>
           <Link to='/' className='nav-item'>
             Home
