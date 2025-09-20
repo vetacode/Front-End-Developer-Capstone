@@ -4,17 +4,29 @@
   box-sizing: border-box;
 }
 
-.App {
-  /* text-align: center; */
+/* .App {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
-  max-width: 1232px;
-  padding-left: 24px;
-  padding-right: 24px;
-  margin: 0 auto;
   gap: 4rem;
+  background-color: #2196f3;
+} */
+
+/* Wrapper only for inner page content */
+.App-content {
+  max-width: 1232px;
+  /* padding-left: 24px;
+  padding-right: 24px; */
+  margin: 0 auto;
+  border: solid #495e57 2px;
+}
+
+.App-header {
+  display: flex;
+  align-items: center;
+  background-color: #edefee;
+  gap: 4rem;
+  padding: 20px;
 }
 
 .App-logo {
@@ -22,16 +34,65 @@
   margin-right: auto;
 }
 
-.App-header {
+.home {
+  position: relative;
   display: flex;
-
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  width: 90vw;
-  background-color: #edefee;
-  gap: 4rem;
-  padding: 20px;
-  /* border: solid #495e57 2px; */
+  gap: 1rem;
+  background-color: #495e57;
+  flex-wrap: wrap;
+  border: solid #f4ce14 2px;
+  margin-top: 30px;
+  /* padding: 20px; */
+}
+
+.hero {
+  /* position: relative; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15rem;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  max-width: 430px;
+  /* gap: 2rem; */
+  flex-wrap: wrap;
+
+  align-items: start;
+}
+
+.hero-img {
+  /* border: solid #f4ce14 2px; */
+  border-radius: 20px;
+  margin-bottom: -50px;
+  margin-top: -30px;
+  /* position: absolute; */
+}
+
+.home p {
+  margin-top: 30px;
+  color: white;
+  font-family: 'Markazi';
+  font-size: 1.5rem;
+}
+
+h1 {
+  color: #f4ce14;
+  font-family: 'Markazi';
+  font-size: 3rem;
+}
+
+h2 {
+  color: #f4ce14;
+  font-family: 'Karla Bold';
+  font-size: 2rem;
 }
 
 nav {
@@ -117,21 +178,23 @@ li {
   background-color: #f4ce14;
   border: none;
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 20px;
   cursor: pointer;
   font-size: 16px;
-  margin: 10px;
+  height: fit-content;
   font-weight: bold;
-  color: #282c34;
+  color: #495e57;
 }
 .btn:hover {
-  background-color: #fbdabb;
-  transition: ease-in-out 0.3s;
-  color: #282c34;
+  /* background-color: #fbdabb; */
+  background-color: #ceaf14;
+  transition: ease-in-out 0.2s;
+
   font-style: bold;
 }
 
 .btn:active {
-  background-color: #ee9972;
+  background-color: #f4ce14;
+  /* color: white; */
   transform: scale(0.95);
 }

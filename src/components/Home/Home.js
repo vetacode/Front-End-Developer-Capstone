@@ -1,25 +1,27 @@
-import logo from '../../images/logo-nav.svg';
+import hero from '../../images/hero-image.svg';
 import Footer from '../Footer';
 
 function Home() {
   return (
     <>
-      <div>
-        <h2>Welcome to the Home Page</h2>
-        <div className='home-content'>
-          <img
-            src={logo}
-            height={50}
-            width={200}
-            alt='logo'
-            style={{ border: '1px solid black' }}
-          />
-          <p>
-            This is the homepage of Little Lemon Company Ltd. on React
-            application.
-          </p>
+      <section className='home'>
+        <div className='hero'>
+          <div className='hero-text'>
+            <h1>Little Lemon</h1>
+            <h2>Chicago</h2>
+            <p>
+              We are a family owned Mediterranean restaurant, focused on
+              traditional recipes served with a modern twist.
+            </p>
+            <button className='btn' style={{ marginTop: '2rem' }}>
+              Reserve a Table
+            </button>
+          </div>
+          <div>
+            <img src={hero} height={500} alt='logo' className='hero-img' />
+          </div>
         </div>
-      </div>
+      </section>
 
       <Footer />
     </>

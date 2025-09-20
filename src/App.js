@@ -12,7 +12,7 @@ function App() {
   const { isLoggedIn } = useLog();
 
   return (
-    <div className='App'>
+    <div className='App-content'>
       {isLoggedIn ? (
         <>
           <Header />
