@@ -28,7 +28,7 @@ const Testimonials = () => {
     <section name='testimonials' className='testimonials'>
       <div className='testimonials-header'>
         <h3 className='testimonials-title'>Testimonials</h3>
-        <h2 className='testimonials-details'>read what others have to say</h2>
+        <h2 className='testimonials-details'>read what others say</h2>
         <div className='testimonials-background'>
           <div className='testimonials-container'>{testimonialLinks}</div>
         </div>

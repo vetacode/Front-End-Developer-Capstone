@@ -17,7 +17,9 @@ function Header() {
   return (
     <div>
       <header className='App-header'>
-        <img src={logo} height={60} className='App-logo' alt='logo' />
+        <Link to='/' className='App-logo'>
+          <img src={logo} alt='logo' height={60} className='App-logo' />
+        </Link>
         <nav className='nav'>
           <Link to='/' className='nav-item'>
             Home

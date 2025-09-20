@@ -1,5 +1,5 @@
 import React from 'react';
-import restaurant from '../../assets/restaurant.jpg';
+import logo from '../../assets/footerlogo.png';
 import './Footer.styles.css';
 import { links, contacts, socials } from '../../data';
 import { Link as LinkS } from 'react-scroll';
@@ -48,7 +48,7 @@ const Footer = () => {
     <footer name='contact'>
       <nav className='footer-container'>
         <div className='footer-photo-container'>
-          <img src={restaurant} className='footer-photo' alt='logo' />
+          <img src={logo} className='footer-photo' alt='logo' />
         </div>
         <ul className='grid-item-nav'>
           <p className='footer-title'>Little Lemon</p>

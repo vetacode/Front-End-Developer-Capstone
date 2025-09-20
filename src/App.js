@@ -7,6 +7,7 @@ import About from './components/About';
 import Specials from './components/Specials/Specials';
 import BookingForm from './components/BookingForm/BookingForm';
 import { useLog, LogProvider } from './Hooks/LogContext';
+// import { BookingPage } from './components/BookingPage';
 
 function App() {
   const { isLoggedIn } = useLog();

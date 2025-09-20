@@ -2,12 +2,10 @@ import { useEffect, useState } from 'react';
 import './BookingForm.styles.css';
 import { submitAPI } from '../../utils/temp';
 import { useNavigate } from 'react-router-dom';
-import { Link as LinkR } from 'react-router-dom';
-import home from '../../assets/booking/home.svg';
 
-const BookingForm = ({ availableTimes, dispatch }) => {
+const BookingForm = ({ availableTimes }) => {
   const navigate = useNavigate();
-  const { times } = availableTimes;
+  const { times = [] } = availableTimes || {};
   const [bookings, setBookings] = useState({
     date: '',
     time: '17:00',
@@ -50,15 +48,11 @@ const BookingForm = ({ availableTimes, dispatch }) => {
   const handleChange = (e) => {
     const { name, value } = e.target;
 
-    // [e.target.name] = e.target.time || e.target.guests || e.target.occasion
     setBookings({ ...bookings, [name]: value });
   };
 
   return (
     <section name='reservations' className='booking-form'>
-      <LinkR to='/'>
-        <img src={home} alt='home' className='booking-home' />
-      </LinkR>
       <div className='bookings-container'>
         <h2 className='booking-header'>Little Lemon</h2>
         <h2 className='booking-subheader'>Chicago</h2>
@@ -78,11 +72,6 @@ const BookingForm = ({ availableTimes, dispatch }) => {
             aria-label='On Change'
             onChange={(e) => {
               setBookings({ ...bookings, date: e.target.value });
-              // new Date (e.target.value),  date argument on fetchAPI function can access .getDate() and set availableTimes different based on a given Date
-              dispatch({
-                type: 'UPDATE_TIMES',
-                date: new Date(e.target.value),
-              });
             }}
             required={true}
           />
