@@ -76,23 +76,26 @@
   /* position: absolute; */
 }
 
-.home p {
-  margin-top: 30px;
-  color: white;
-  font-family: 'Markazi';
-  font-size: 1.5rem;
+.home h1 {
+  color: #f4ce14;
+  font-family: 'Markazi Text';
+  font-size: 5rem;
+  line-height: 3rem;
 }
 
-h1 {
+.home h2 {
   color: #f4ce14;
-  font-family: 'poppins';
+  font-family: 'Markazi Text';
   font-size: 3rem;
 }
 
-h2 {
-  color: #f4ce14;
-  font-family: 'Karla Bold';
-  font-size: 2rem;
+.home p {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: white;
+  font-family: 'Karla';
+  font-weight: 700;
+  font-size: 1.2rem;
 }
 
 nav {
