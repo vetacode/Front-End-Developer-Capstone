@@ -56,21 +56,23 @@ const Footer = () => {
         </ul>
 
         <ul className='grid-item-contact'>
-          <p className='footer-title'>Contact</p>
-          <address>
-            You may also want to visit us:
-            <br />
-            Little Lemon
-            <br />
-            331 E Chicago
-            <br />
-            LaSalle Street Chicago, Illinois 60602
-            <br />
-            USA
-            <br />
-            <br />
-            <div className='contacts'>{contactLinks}</div>
-          </address>
+          <div className=''>
+            <p className='footer-title'>Contact</p>
+            <address className='contacts'>
+              You may also want to visit us:
+              <br />
+              Little Lemon
+              <br />
+              331 E Chicago
+              <br />
+              LaSalle Street Chicago, Illinois 60602
+              <br />
+              USA
+              <br />
+              <br />
+              <div className='contacts'>{contactLinks}</div>
+            </address>
+          </div>
         </ul>
 
         <ul className='grid-item-socials'>

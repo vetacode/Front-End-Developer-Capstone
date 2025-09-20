@@ -5,7 +5,8 @@ import { useNavigate } from 'react-router-dom';
 
 const BookingForm = ({ availableTimes }) => {
   const navigate = useNavigate();
-  const { times = [] } = availableTimes || {};
+  const { times = [['15:00'], ['16:00'], ['17:00'], ['18:00'], ['19:00']] } =
+    availableTimes || {};
   const [bookings, setBookings] = useState({
     date: '',
     time: '17:00',
@@ -123,7 +124,15 @@ const BookingForm = ({ availableTimes }) => {
           </select>
 
           {/* SUBMIT */}
-          <button type='submit' className='booking-button'>
+          <button
+            type='submit'
+            className='btn'
+            style={{
+              marginTop: '30px',
+              alignSelf: 'center',
+              textTransform: 'uppercase',
+            }}
+          >
             Make Your reservation
           </button>
         </form>

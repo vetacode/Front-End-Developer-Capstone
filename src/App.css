@@ -166,6 +166,23 @@ li {
   margin: 0 10px;
 }
 
+.order-online {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: #495e57;
+  flex-wrap: wrap;
+  height: 100vh;
+  margin-top: 30px;
+  padding: 20px;
+  color: #f4ce14;
+  font-family: 'Markazi Text';
+  font-weight: 700;
+  font-size: 5rem;
+}
+
 .container {
   display: grid;
   /* grid-template-columns: 100px 100px 100px; */
@@ -183,11 +200,11 @@ li {
   background-color: #f4ce14;
   border: none;
   padding: 10px 20px;
-  border-radius: 20px;
+  border-radius: 50px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 24px;
   height: fit-content;
-  /* font-family: 'Karla'; */
+  font-family: 'Markazi Text';
   font-weight: 700;
   color: #495e57;
 }

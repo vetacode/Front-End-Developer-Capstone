@@ -3,6 +3,7 @@ import './ConfirmedBooking.styles.css';
 import restaurant from '../../assets/restaurant.jpg';
 import location from '../../assets/booking/location.svg';
 import { Link as LinkR } from 'react-router-dom';
+import confirmed from './confirmed2.png';
 
 const ConfirmedBooking = () => {
   const [reservedDetails, setReserveDetails] = useState('');
@@ -14,7 +15,12 @@ const ConfirmedBooking = () => {
 
   return (
     <section name='booking-confirmation' className='booking-confirmation'>
-      <img src='./Logo.svg' alt='logo' className='confirmation-logo' />
+      <img
+        src={confirmed}
+        alt='confirmed'
+        className='confirmation-logo'
+        style={{ width: '30%' }}
+      />
       <div className='confirmation-image-container'>
         <img
           src={restaurant}
@@ -61,8 +67,21 @@ const ConfirmedBooking = () => {
         </a>
       </div>
 
-      <LinkR to='/' className='confirmation-home'>
-        Go Home
+      <LinkR to='/' className=''>
+        <button
+          className='btn'
+          style={{
+            width: '300px',
+            height: '50px',
+            fontSize: '32px',
+            padding: '10px',
+            lineHeight: '32px',
+            marginTop: '2rem',
+            marginBottom: '2rem',
+          }}
+        >
+          Go Home
+        </button>
       </LinkR>
     </section>
   );

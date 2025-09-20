@@ -1,6 +1,6 @@
 /*HERO */
 .hero {
-  height: 100vh;
+  /* height: 100vh; */
   padding: 8rem 2rem;
   background-color: #495e57;
   display: grid;
@@ -17,17 +17,19 @@
 
 .display-title {
   font-weight: 500;
-  font-size: 48px;
+  font-size: 96px !important;
+  line-height: 64px;
   color: #f4ce14;
 }
 
 .display-subtitle {
   font-size: 32px;
+  color: #ee9972;
   margin-bottom: 1rem;
 }
 
 .display-text {
-  font-size: 24px;
+  font-size: 36px !important;
   margin-bottom: 2rem;
 }
 

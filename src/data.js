@@ -88,18 +88,18 @@ export const testimonials = [
 export const contacts = [
   {
     id: 1,
-    link: 'mailto:jim@rock.com',
-    title: 'jim@rock.com',
+    link: 'mailto:jhon@littlelemon.com',
+    title: 'Jhon@littlelemon.com',
   },
   {
     id: 2,
-    link: 'tel:+13115552368',
-    title: '(311) 555-2368',
+    link: 'tel:+11235656',
+    title: '(352) 555-2368',
   },
   {
     id: 3,
     link: 'mailto:littlemon@bookings.com',
-    title: 'littlemon@bookings.com',
+    title: 'littlelemon@bookings.com',
   },
 ];
 
