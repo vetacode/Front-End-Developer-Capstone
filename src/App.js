@@ -2,25 +2,25 @@ import './App.css';
 import Header from './components/Header';
 import { OrderOnline } from './components/OrderOnline';
 import { Routes, Route } from 'react-router-dom';
-import Home from './components/Home/Home';
+import Home from './Home/Home';
 import About from './components/About';
-import Menu from './components/Menu';
-import { BookingPage } from './components/BookingPage';
+import Specials from './components/Specials/Specials';
+import BookingForm from './components/BookingForm/BookingForm';
 import { useLog, LogProvider } from './Hooks/LogContext';
 
 function App() {
   const { isLoggedIn } = useLog();
 
   return (
-    <div className='App-content'>
+    <div className=''>
       {isLoggedIn ? (
         <>
           <Header />
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/About' element={<About />} />
-            <Route path='/Menu' element={<Menu />} />
-            <Route path='/BookingPage' element={<BookingPage />} />
+            <Route path='/Menu' element={<Specials />} />
+            <Route path='/BookingPage' element={<BookingForm />} />
             <Route path='/OrderOnline' element={<OrderOnline />} />
           </Routes>
         </>
