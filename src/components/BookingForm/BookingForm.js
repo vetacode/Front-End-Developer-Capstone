@@ -75,7 +75,7 @@ const BookingForm = ({ availableTimes }) => {
             onChange={(e) => {
               setBookings({ ...bookings, date: e.target.value });
             }}
-            required={true}
+            required
           />
 
           {/* TIME */}
@@ -86,7 +86,7 @@ const BookingForm = ({ availableTimes }) => {
             value={bookings.time}
             onChange={handleChange}
             aria-label='On Change'
-            required={true}
+            required
           >
             {times.map((time) => (
               <option key={time}>{time}</option>
@@ -105,7 +105,7 @@ const BookingForm = ({ availableTimes }) => {
             value={bookings.guests}
             onChange={handleChange}
             aria-label='On Change'
-            required={true}
+            required
           />
 
           {/* TYPE OF OCCASION */}
@@ -116,7 +116,7 @@ const BookingForm = ({ availableTimes }) => {
             name='occasion'
             onChange={handleChange}
             aria-label='On Change'
-            required={true}
+            required
           >
             <option>Birthday</option>
             <option>Engagement</option>
