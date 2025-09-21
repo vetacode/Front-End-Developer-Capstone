@@ -15,7 +15,7 @@
 .testimonials-title {
   font-weight: 500;
   font-size: 96px;
-  line-height: 30px;
+  line-height: 60px;
   color: #f4ce14;
 }
 
@@ -107,7 +107,7 @@
   }
 
   .testimonials-details {
-    font-size: 64px;
+    font-size: 40px;
     line-height: 48px;
     width: auto;
   }
@@ -132,6 +132,10 @@
     padding: 6rem;
   }
 
+  .testimonials-details {
+    font-size: 50px;
+  }
+
   .testimonials-background {
     height: fit-content;
   }
@@ -150,6 +154,10 @@
 }
 
 @media (min-width: 1440px) {
+  .testimonials-details {
+    font-size: 60px;
+    font-weight: 500;
+  }
   .testimonials-background {
     height: fit-content;
     width: fit-content;
