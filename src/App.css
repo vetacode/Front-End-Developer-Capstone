@@ -4,19 +4,8 @@
   box-sizing: border-box;
 }
 
-/* .App {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 4rem;
-  background-color: #2196f3;
-} */
-
-/* Wrapper only for inner page content */
 .App-content {
   max-width: 1232px;
-  /* padding-left: 24px;
-  padding-right: 24px; */
   margin: 0 auto;
   border: solid #495e57 2px;
 }
@@ -27,6 +16,8 @@
   background-color: #edefee;
   gap: 4rem;
   padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .App-logo {
@@ -45,17 +36,7 @@
   flex-wrap: wrap;
   border: solid #f4ce14 2px;
   margin-top: 30px;
-  /* padding: 20px; */
 }
-
-/* .hero {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 15rem;
-  flex-wrap: wrap;
-} */
 
 .hero-text {
   display: flex;
@@ -149,16 +130,15 @@ nav a::after {
   content: '';
   position: absolute;
   left: 0;
-  bottom: -2px; /* sits right under text */
+  bottom: -2px;
   width: 0;
   height: 3px;
-  /* background: black; */
+
   background: #f4ce14;
   transition: width 0.3s ease;
 }
 nav a:hover::after {
   width: 100%;
-  /* color: #f4ce14; */
 }
 
 li {
@@ -183,19 +163,6 @@ li {
   font-size: 5rem;
 }
 
-.container {
-  display: grid;
-  /* grid-template-columns: 100px 100px 100px; */
-  grid-template-columns: repeat(3, 100px);
-  grid-template-rows: 2fr 1fr;
-  /* grid-auto-rows: 100px; */
-  /* grid-auto-columns: 100px; */
-  grid-auto-rows: minmax(100px, auto);
-  grid-gap: 10px;
-  background-color: #2196f3;
-  padding: 10px;
-}
-
 .btn {
   background-color: #f4ce14;
   border: none;
@@ -209,7 +176,6 @@ li {
   color: #495e57;
 }
 .btn:hover {
-  /* background-color: #fbdabb; */
   background-color: #ceaf14;
   transition: ease-in-out 0.2s;
 
@@ -218,6 +184,19 @@ li {
 
 .btn:active {
   background-color: #f4ce14;
-  /* color: white; */
+
   transform: scale(0.95);
+}
+
+.container {
+  display: grid;
+  /* grid-template-columns: 100px 100px 100px; */
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: 2fr 1fr;
+  /* grid-auto-rows: 100px; */
+  /* grid-auto-columns: 100px; */
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 10px;
+  background-color: #2196f3;
+  padding: 10px;
 }

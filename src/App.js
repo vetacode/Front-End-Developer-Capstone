@@ -62,7 +62,10 @@ function App() {
           </Routes>
         </>
       ) : (
-        <Header />
+        <>
+          <Header />
+          <Home />
+        </>
       )}
     </div>
   );
