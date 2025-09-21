@@ -25,7 +25,7 @@
   font-weight: 800;
   font-size: 48px;
   text-transform: capitalize;
-  width: 300px;
+  width: auto;
   line-height: 32px;
 }
 
@@ -84,14 +84,15 @@
   }
 
   .testimonials-title {
-    font-size: 30px;
+    font-family: 'Markazi Text';
+    font-size: 72px;
     margin: 2rem auto;
   }
 
   .testimonials-details {
     font-size: 64px;
     line-height: 48px;
-    width: 400px;
+    width: auto;
   }
 
   .testimonials-map-container {
@@ -132,10 +133,6 @@
 }
 
 @media (min-width: 1440px) {
-  .testimonials {
-    padding: 6rem 12rem;
-  }
-
   .testimonials-background {
     height: 450px;
     width: 80vw;
