@@ -1,10 +1,23 @@
 import './Hero.styles.css';
 import { Link as LinkR } from 'react-router-dom';
 import hero from '../../assets/images/hero-image.svg';
+import { useLog } from '../../Hooks/LogContext';
+import { useState } from 'react';
+import Modal from '../Modal/Modal';
 
 const Hero = () => {
+  const { isLoggedIn } = useLog();
+  const [showModal, setShowModal] = useState(false);
+
+  const handleClick = (e) => {
+    if (!isLoggedIn) {
+      e.preventDefault();
+      setShowModal(true);
+    }
+  };
+
   return (
-    <section name='home' className='hero aria-labelledby="hero-title'>
+    <section name='home' className='hero' aria-labelledby='hero-title'>
       <div className='display-container'>
         <h1 id='hero-title' className='display-title'>
           Little Lemon
@@ -14,7 +27,11 @@ const Hero = () => {
           We are a family owned Mediterranean restaurant, focused on traditional
           recipes served with a modern twist.
         </h4>
-        <LinkR to='/bookingPage' aria-label='reserve a table'>
+        <LinkR
+          to='/bookingPage'
+          onClick={handleClick}
+          aria-label='reserve a table'
+        >
           <button
             className='btn'
             aria-label='reserve a table'
@@ -33,6 +50,12 @@ const Hero = () => {
       <div className='image-container'>
         <img src={hero} alt='restaurant food' className='display-image' />
       </div>
+      {showModal && (
+        <Modal
+          message='⚠️ Please Log In To Access Our Full Services'
+          onClose={() => setShowModal(false)}
+        />
+      )}
     </section>
   );
 };

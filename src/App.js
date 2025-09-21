@@ -9,9 +9,18 @@ import BookingForm from './components/BookingForm/BookingForm';
 import { useLog, LogProvider } from './Hooks/LogContext';
 import ConfirmedBooking from './components/ConfirmedBooking/ConfirmedBooking';
 import { Navigate } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import Modal from './components/Modal/Modal';
 
 function App() {
   const { isLoggedIn } = useLog();
+  const [showModal, setShowModal] = useState(false);
+
+  useEffect(() => {
+    if (isLoggedIn) {
+      setShowModal(true);
+    }
+  }, [isLoggedIn]);
   function ProtectedRoute({ isLoggedIn, children }) {
     if (!isLoggedIn) {
       <h1>You should login first</h1>;
@@ -20,7 +29,13 @@ function App() {
     return children;
   }
   return (
-    <div className=''>
+    <div>
+      {showModal && (
+        <Modal
+          message='Awesome, You have successfully Logged in 🎉'
+          onClose={() => setShowModal(false)}
+        />
+      )}
       {isLoggedIn ? (
         <>
           <Header />
