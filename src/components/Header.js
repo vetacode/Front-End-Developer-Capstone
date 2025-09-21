@@ -38,9 +38,9 @@ function Header() {
           </Link>
         </nav>
         {!isLoggedIn ? (
-          <LoginButton onLogin={handleLogin} />
+          <LoginButton onLogin={handleLogin} aria-label='login' />
         ) : (
-          <LogoutButton onLogout={logout} />
+          <LogoutButton onLogout={logout} aria-label='logout' />
         )}
       </header>
     </div>

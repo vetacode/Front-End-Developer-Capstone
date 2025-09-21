@@ -1,6 +1,6 @@
 export function LoginButton(props) {
   return (
-    <button className='btn' onClick={props.onLogin}>
+    <button className='btn' onClick={props.onLogin} aria-label='login'>
       Login
     </button>
   );
@@ -8,7 +8,7 @@ export function LoginButton(props) {
 
 export function LogoutButton(props) {
   return (
-    <button className='btn' onClick={props.onLogout}>
+    <button className='btn' onClick={props.onLogout} aria-label='logout'>
       Logout
     </button>
   );

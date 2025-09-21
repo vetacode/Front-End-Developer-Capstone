@@ -19,7 +19,11 @@ const Specials = () => {
     <section name='menu' className='specials'>
       <div className='specials-header'>
         <h1 className='specials-title'>This weeks Specials!</h1>
-        <LinkR to='/OrderOnline' onClick={handleClick}>
+        <LinkR
+          to='/OrderOnline'
+          onClick={handleClick}
+          aria-label='order online'
+        >
           <button className='menu-button' style={{ cursor: 'pointer' }}>
             Order Online{' '}
           </button>

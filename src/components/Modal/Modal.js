@@ -6,7 +6,7 @@ const Modal = ({ message, onClose }) => {
     <div className='modal-overlay'>
       <div className='modal-content'>
         <p>{message}</p>
-        <button className='btn' onClick={onClose}>
+        <button className='btn' onClick={onClose} aria-label='close modal'>
           Let's Go
         </button>
       </div>
