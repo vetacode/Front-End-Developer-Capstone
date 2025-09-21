@@ -1,7 +1,7 @@
 /* ABOUT */
 .about {
   /* height: fit-content; */
-  padding: 4rem;
+  padding: 4rem 2rem;
   display: grid;
   /* grid-template-columns: 1fr; */
   gap: 50px;
