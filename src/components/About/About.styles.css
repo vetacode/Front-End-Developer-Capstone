@@ -9,13 +9,17 @@
 }
 
 .about-title {
-  font-weight: 500;
-  font-size: 48px;
+  font-family: 'Markazi Text';
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 50px;
   color: #495e57;
+  margin-bottom: 1rem;
 }
 
 .about-subtitle {
-  font-size: 32px;
+  font-family: 'Markazi Text';
+  font-size: 60px;
   margin-bottom: 2rem;
   color: #ee9972;
 }
@@ -64,14 +68,6 @@
   .about {
     padding: 4rem;
     height: 100vh;
-  }
-
-  .about-title {
-    font-size: 64px;
-  }
-
-  .about-subtitle {
-    font-size: 48px;
   }
 
   .about-text {
@@ -137,5 +133,6 @@
     text-align: left;
     justify-content: center;
     align-items: center;
+    padding: 6rem 10rem;
   }
 }
