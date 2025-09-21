@@ -62,6 +62,7 @@ const BookingForm = ({ availableTimes }) => {
           className='form-container'
           onSubmit={handleSubmit}
           aria-label='On Submit'
+          htmlFor='res-date'
         >
           {/* DATE */}
           <label htmlFor='res-date'>Date: </label>
