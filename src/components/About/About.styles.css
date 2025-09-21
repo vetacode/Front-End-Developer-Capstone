@@ -1,9 +1,9 @@
 /* ABOUT */
 .about {
-  height: fit-content;
+  /* height: fit-content; */
   padding: 4rem;
   display: grid;
-  grid-template-columns: 1fr;
+  /* grid-template-columns: 1fr; */
   gap: 50px;
   place-items: center;
 }
@@ -11,15 +11,14 @@
 .about-title {
   font-family: 'Markazi Text';
   font-weight: 700;
-  font-size: 72px;
+  font-size: 96px;
   line-height: 50px;
   color: #495e57;
-  margin-bottom: 1rem;
 }
 
 .about-subtitle {
   font-family: 'Markazi Text';
-  font-size: 60px;
+  font-size: 48px;
   margin-bottom: 2rem;
   color: #ee9972;
 }
@@ -66,8 +65,8 @@
 
 @media (min-width: 768px) {
   .about {
-    padding: 4rem;
-    height: 100vh;
+    padding: 6rem 8rem;
+    /* height: 100vh; */
   }
 
   .about-text {
