@@ -68,12 +68,12 @@ export const testimonials = [
   {
     id: 1,
     image: andrea,
-    name: 'Andrea Smith',
+    name: 'Sylvia Doe',
   },
   {
     id: 2,
     image: jane,
-    name: 'Jane Marks',
+    name: 'Dorothy Smith',
   },
   {
     id: 3,
@@ -84,7 +84,7 @@ export const testimonials = [
   {
     id: 4,
     image: mark,
-    name: 'Mark James',
+    name: 'Alan Smith',
   },
 ];
 
