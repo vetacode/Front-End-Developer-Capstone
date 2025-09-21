@@ -79,15 +79,15 @@
   }
 
   .card-container {
-    width: 250px;
+    width: 400px;
   }
 
   .specials-image-container {
-    width: 250px;
+    width: 400px;
   }
 
   .specials-image {
-    height: 200px;
+    height: 400px;
   }
 }
 

@@ -1,7 +1,7 @@
 /*HERO */
 .hero {
   /* height: 100vh; */
-  padding: 8rem 2rem;
+  padding: 2rem;
   background-color: #495e57;
   display: grid;
   grid-template-columns: 1fr;
@@ -35,7 +35,6 @@
 
 .image-container {
   width: 250px;
-  margin-top: 2rem;
 }
 
 .display-image {
@@ -99,7 +98,7 @@
 
 @media (min-width: 1440px) {
   .hero {
-    padding: 6rem 6rem;
+    padding: 4rem 4rem;
     text-align: left;
   }
 

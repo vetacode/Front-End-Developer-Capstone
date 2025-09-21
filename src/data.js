@@ -16,18 +16,22 @@ import mark from './assets/testimonials/mark.jpg';
 export const links = [
   {
     id: 1,
-    link: 'about',
+    link: 'home',
   },
   {
     id: 2,
-    link: 'menu',
+    link: 'about',
   },
   {
     id: 3,
-    link: 'testimonials',
+    link: 'menu',
   },
   {
     id: 4,
+    link: 'testimonials',
+  },
+  {
+    id: 5,
     link: 'contact',
   },
 ];

@@ -4,7 +4,7 @@ import hero from '../../assets/images/hero-image.svg';
 
 const Hero = () => {
   return (
-    <section className='hero'>
+    <section name='home' className='hero'>
       <div className='display-container'>
         <h1 className='display-title'>Little Lemon</h1>
         <h3 className='display-subtitle'>Chicago</h3>
