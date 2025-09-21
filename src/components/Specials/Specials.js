@@ -20,10 +20,7 @@ const Specials = () => {
       <div className='specials-header'>
         <h1 className='specials-title'>This weeks Specials!</h1>
         <LinkR to='/OrderOnline' onClick={handleClick}>
-          <button
-            className='btn'
-            style={{ width: '200px', backgroundColor: '#ee9972' }}
-          >
+          <button className='menu-button' style={{ cursor: 'pointer' }}>
             Order Online{' '}
           </button>
         </LinkR>

@@ -166,20 +166,20 @@ li {
 .btn {
   background-color: #f4ce14;
   border: none;
-  padding: 10px 20px;
+  padding: 5px;
   border-radius: 50px;
   cursor: pointer;
-  font-size: 24px;
+  font-size: 26px;
   height: fit-content;
   font-family: 'Markazi Text';
-  font-weight: 700;
+  font-weight: 800;
   color: #495e57;
+  width: 120px;
 }
 .btn:hover {
-  background-color: #ceaf14;
+  background-color: #fff1ad;
   transition: ease-in-out 0.2s;
-
-  font-style: bold;
+  border: 2px solid #f4ce14;
 }
 
 .btn:active {

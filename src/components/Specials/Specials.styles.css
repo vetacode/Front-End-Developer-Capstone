@@ -10,21 +10,39 @@
 }
 
 .specials-title {
+  margin-bottom: 2rem;
+  font-family: 'Markazi Text', serif;
   font-weight: 500;
-  font-size: 30px;
-  color: #333;
-  margin-bottom: 1rem;
+  font-size: 96px !important;
+  line-height: 64px;
+  color: #495e57;
 }
 
 .menu-button {
-  font-family: 'Karla', sans-serif;
-  font-weight: 800;
-  background-color: #fbdabb;
-  color: #333;
-  padding: 1rem 2rem;
-  border-radius: 0.5rem;
-  width: 200px;
+  background-color: #ee9972;
   border: none;
+  padding: 5px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 24px;
+  height: fit-content;
+  font-family: 'Markazi Text';
+  font-weight: 700;
+  color: #495e57;
+  width: 200px;
+  height: 50px;
+}
+
+.menu-button:hover {
+  background-color: #fbdabb;
+  transition: ease-in-out 0.2s;
+  border: #ee9972 solid 2px;
+}
+
+.menu-button:active {
+  background-color: #ee9972;
+  transition: ease-in-out 0.2s;
+  transform: scale(0.95);
 }
 
 @media (min-width: 768px) {
