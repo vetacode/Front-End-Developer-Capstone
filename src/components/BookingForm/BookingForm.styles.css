@@ -37,13 +37,16 @@
 
 .booking-header {
   color: #f4ce14;
-  font-size: 36px;
+  font-size: 54px;
   font-weight: 800;
+  font-family: Markazi Text;
 }
 
 .booking-subheader {
-  font-size: 18px;
+  font-size: 30px;
   font-weight: 800;
+  color: #fbdabb;
+  font-family: 'Karla', sans-serif;
 }
 
 .booking-title {
@@ -51,20 +54,41 @@
   font-size: 18px;
   font-weight: 800;
   text-transform: uppercase;
+  text-align: center;
 }
 
 input,
 select {
+  /* appearance: none; */
   width: 250px;
   height: 35px;
-  border-radius: 0.5rem;
+  border-radius: 2rem;
   border: none;
   padding: 0.25rem 1rem;
+  color: #495e57;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* select {
+  appearance: none;
+} */
+
+select:hover {
+  cursor: pointer;
+}
+
+input[type='date']::-webkit-calendar-picker-indicator {
+  /* opacity: 0; */
+  cursor: pointer;
+  /* width: 100%;
+  height: 100%; */
 }
 
 label {
   font-size: 16px;
   font-style: italic;
+  margin-bottom: -0.5rem;
 }
 
 .booking-button {
@@ -92,7 +116,7 @@ label {
   }
 
   .booking-header {
-    font-size: 64px;
+    font-size: 96px;
   }
 
   .booking-subheader {
@@ -112,6 +136,8 @@ label {
   select {
     width: 400px;
     height: 50px;
+    font-weight: 800;
+    font-size: 23px;
   }
 
   label {

@@ -81,6 +81,7 @@ const BookingForm = ({ availableTimes }) => {
           {/* TIME */}
           <label htmlFor='res-time'>Time:</label>
           <select
+            type='time'
             id='res-time'
             name='time'
             value={bookings.time}
@@ -111,6 +112,7 @@ const BookingForm = ({ availableTimes }) => {
           {/* TYPE OF OCCASION */}
           <label htmlFor='occasion'>Occasion:</label>
           <select
+            type='text'
             id='occasion'
             value={bookings.occasion}
             name='occasion'
@@ -132,9 +134,11 @@ const BookingForm = ({ availableTimes }) => {
               marginTop: '30px',
               alignSelf: 'center',
               textTransform: 'uppercase',
+              width: '100%',
+              height: '50px',
             }}
           >
-            Make Your reservation
+            Submit
           </button>
         </form>
       </div>
