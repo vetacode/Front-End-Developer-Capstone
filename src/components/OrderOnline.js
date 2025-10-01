@@ -3,11 +3,11 @@ import React from 'react';
 export const OrderOnline = () => {
   return (
     <div className='order-online'>
-      <h1>
+      <h4>
         Order Online {''}
-        Under Maintenance
-      </h1>
-      <h3>Please come back later . . .</h3>
+        Currently Unavailable
+      </h4>
+      <h3>Please Reserve a Table . . .</h3>
     </div>
   );
 };

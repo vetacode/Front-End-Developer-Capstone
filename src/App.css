@@ -150,6 +150,7 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   align-items: center;
   gap: 1rem;
   background-color: #495e57;
@@ -159,8 +160,16 @@ li {
   padding: 20px;
   color: #f4ce14;
   font-family: 'Markazi Text';
-  font-weight: 700;
-  font-size: 5rem;
+  font-weight: 500;
+  font-size: 4rem;
+}
+
+@media (max-width: 768px) {
+  .order-online {
+    flex-direction: column;
+    text-align: center;
+    font-size: 2rem;
+  }
 }
 
 .btn {
