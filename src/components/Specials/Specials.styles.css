@@ -13,7 +13,7 @@
   margin-bottom: 2rem;
   font-family: 'Markazi Text', serif;
   font-weight: 500;
-  font-size: 96px !important;
+  font-size: 50px;
   line-height: 64px;
   color: #495e57;
 }
@@ -51,7 +51,7 @@
   }
 
   .specials-title {
-    font-size: 64px;
+    font-size: 90px;
   }
 }
 
