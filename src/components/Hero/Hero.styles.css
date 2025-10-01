@@ -42,6 +42,7 @@
   height: 250px;
   object-fit: cover;
   border-radius: 1rem;
+  margin-top: 2rem;
 }
 
 .reserve-button {
