@@ -150,8 +150,12 @@
   .testimonials {
     padding: 6rem 10rem;
   }
+
+  .testimonials-title {
+    font-size: 96px;
+  }
   .testimonials-details {
-    font-size: 60px;
+    font-size: 58px;
     font-weight: 500;
   }
   .testimonials-background {

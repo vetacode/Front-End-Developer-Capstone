@@ -141,6 +141,31 @@ li {
   font-size: 2rem;
 }
 
+.order-online h3 {
+  color: #fbdabb;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .order-online {
+    font-size: 3rem;
+  }
+
+  .order-online h3 {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .order-online {
+    font-size: 5rem;
+  }
+
+  .order-online h3 {
+    font-size: 4.5rem;
+  }
+}
+
 .App-header {
   display: flex;
   align-items: center;
