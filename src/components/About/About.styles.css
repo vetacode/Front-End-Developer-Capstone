@@ -55,12 +55,14 @@
   object-fit: cover;
   width: 150px;
   height: 200px;
+  box-shadow: #333 4px 8px 15px;
 }
 
 .about-image-two {
   object-fit: cover;
   width: 150px;
   height: 200px;
+  box-shadow: #333 4px 8px 15px;
 }
 
 @media (min-width: 768px) {
