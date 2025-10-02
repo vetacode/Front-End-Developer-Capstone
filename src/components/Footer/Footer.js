@@ -89,9 +89,9 @@ const Footer = () => {
           href='https://www.linkedin.com/'
           rel='noreferrer'
         >
-          Vetacode
+          Vic Vetacode {''}
         </a>
-        . Don't claim as your own.
+        All Rights Reserved.
       </p>
     </footer>
   );
