@@ -18,7 +18,7 @@ const Specials = () => {
   return (
     <section name='menu' className='specials'>
       <div className='specials-header'>
-        <h1 className='specials-title'>This weeks Specials!</h1>
+        <h1 className='specials-title'>This Weeks Specials!</h1>
         <LinkR
           to='/OrderOnline'
           onClick={handleClick}

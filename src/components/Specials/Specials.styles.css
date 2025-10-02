@@ -13,10 +13,16 @@
   margin-bottom: 2rem;
   font-family: 'Markazi Text', serif;
   font-weight: 500;
-  font-size: 64px;
+  font-size: 60px;
   line-height: 64px;
   color: #495e57;
   text-align: center;
+}
+
+.specials-name {
+  font-family: 'Markazi Text', serif;
+  font-weight: 500;
+  font-size: 28px;
 }
 
 .menu-button {
@@ -46,6 +52,10 @@
   transform: scale(0.95);
 }
 
+.specials-delivery-icon {
+  font-size: 24px;
+}
+
 @media (min-width: 768px) {
   .specials {
     padding: 4rem 4rem;
@@ -67,10 +77,22 @@
     align-items: center;
     justify-content: space-between;
   }
+
+  .specials-name {
+    font-size: 28px;
+  }
 }
 
 @media (min-width: 1440px) {
   .specials {
     padding: 6rem 10rem;
+  }
+
+  .specials-name {
+    font-size: 34px;
+  }
+
+  .specials-delivery-icon {
+    font-size: 28px;
   }
 }

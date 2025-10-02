@@ -18,7 +18,7 @@ const Card = () => {
             <p className='specials-description'>{description}</p>
             <div className='specials-delivery'>
               <p className='specials-name'>Order a delivery</p>
-              <RiEBike2Line />
+              <RiEBike2Line className='specials-delivery-icon' />
             </div>
           </div>
         </div>
