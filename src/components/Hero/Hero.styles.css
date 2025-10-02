@@ -42,7 +42,7 @@
   height: 350px;
   object-fit: cover;
   border-radius: 1rem;
-  /* margin-top: 2rem; */
+  margin-top: 2rem;
 }
 
 .reserve-button {
@@ -88,12 +88,17 @@
 
   .display-image {
     height: 500px;
+    margin-top: 0;
   }
 }
 
 @media (min-width: 1024px) {
   .hero {
     padding: 6rem 6rem;
+  }
+
+  .display-image {
+    margin-top: 0;
   }
 }
 
@@ -113,5 +118,6 @@
 
   .display-image {
     height: 500px;
+    margin-top: 0;
   }
 }

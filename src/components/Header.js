@@ -18,7 +18,7 @@ function Header() {
     <div>
       <header className='App-header'>
         <Link to='/' className='App-logo'>
-          <img src={logo} alt='logo' height={80} className='App-logo' />
+          <img src={logo} alt='logo' height={70} className='App-logo' />
         </Link>
         <nav className='nav'>
           <Link to='/' className='nav-item'>
