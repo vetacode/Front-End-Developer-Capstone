@@ -17,19 +17,19 @@
 
 .display-title {
   font-weight: 500;
-  font-size: 96px !important;
+  font-size: 80px;
   line-height: 64px;
   color: #f4ce14;
 }
 
 .display-subtitle {
-  font-size: 32px;
+  font-size: 48px;
   color: #ee9972;
   margin-bottom: 1rem;
 }
 
 .display-text {
-  font-size: 36px !important;
+  font-size: 32px;
   margin-bottom: 2rem;
 }
 
@@ -39,10 +39,10 @@
 
 .display-image {
   width: 100%;
-  height: 250px;
+  height: 350px;
   object-fit: cover;
   border-radius: 1rem;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
 }
 
 .reserve-button {
@@ -69,11 +69,11 @@
   }
 
   .display-title {
-    font-size: 64px;
+    font-size: 96px;
   }
 
   .display-subtitle {
-    font-size: 48px;
+    font-size: 58px;
     margin-bottom: 2rem;
   }
 

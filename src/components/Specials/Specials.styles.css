@@ -13,9 +13,10 @@
   margin-bottom: 2rem;
   font-family: 'Markazi Text', serif;
   font-weight: 500;
-  font-size: 50px;
+  font-size: 64px;
   line-height: 64px;
   color: #495e57;
+  text-align: center;
 }
 
 .menu-button {
