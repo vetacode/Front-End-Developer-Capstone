@@ -43,7 +43,7 @@ export const specials = [
     name: 'Greek Salad',
     price: '$ 12.99',
     description:
-      'The famous greek salad of crispy lettuce, peppers, olives, and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons.',
+      'The famous greek salad of crispy lettuce, peppers, olives, Chicago style feta cheese, garnished with crunchy garlic & rosemary croutons.',
   },
   {
     id: 2,
