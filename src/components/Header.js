@@ -40,7 +40,7 @@ function Header() {
         {!isLoggedIn ? (
           <LoginButton onLogin={handleLogin} aria-label='login' />
         ) : (
-          <LogoutButton onLogout={logout} aria-label='logout' />
+          <LogoutButton style onLogout={logout} aria-label='logout' />
         )}
       </header>
     </div>
