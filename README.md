@@ -13,7 +13,7 @@ The website allows users to explore menus, reserve tables, and order online — 
 
 | Home Page | Booking Page | Menu Page |
 |------------|---------------|-------------------|
-| ![Home](.src/assets/images/home.png) | ![Booking](.src/assets/images/booking.png) | ![Specials](.src/assets/images/menu.png) |
+| ![Home](.src/assets/images/home-preview.png) | ![Booking](.src/assets/images/booking.png) | ![Specials](.src/assets/images/menu.png) |
 
 ---
 
