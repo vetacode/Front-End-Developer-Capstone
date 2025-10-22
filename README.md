@@ -1,6 +1,6 @@
 # 🍋 Little Lemon - Frontend Capstone
 
-![Little Lemon Banner](./assets/images/preview-banner.png)
+![Little Lemon Banner](./assets/preview-banner.png)
 
 A **modern restaurant web application** built as part of the Frontend Developer Capstone project.  
 The website allows users to explore menus, reserve tables, and order online — featuring a clean UI, responsive layout, and smooth booking flow.
