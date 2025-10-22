@@ -110,30 +110,26 @@ This project is deployed on Vercel for continuous integration and easy hosting.
 You can check the live version here:
 👉 https://vetacode-frontend-capstone.vercel.app/
 
-🧠 Learning Outcomes
+```
+## 🧠 Learning Outcomes
 
-This project demonstrates:
+**This project demonstrates:**
 
-Applying React best practices (props, state, hooks)
+- Applying React best practices (props, state, hooks)
 
-Implementing form validation
+- Implementing form validation
 
-Managing UI state via Context API
+- Managing UI state via Context API
 
-Writing unit tests with Jest
+- Writing unit tests with Jest
 
-Deploying React apps on Vercel
+- Deploying React apps on Vercel
 
-💛 Author
+## 💛 Author
 
-👤 Fiqrie
+**👤 Fiqrie**
 Front-End Developer
-🌐 Portfolio
+**🌐 Portfolio 🐙 GitHub**
 
-🐙 GitHub
-📸 Image Template
-
-To update screenshots, place your images inside /src/assets/images/ and reference them in the table above like this:
-
-🏁 Enjoy exploring Little Lemon!
+## 🏁 Enjoy exploring Little Lemon!
 "Fresh ingredients, classic taste — served with a modern twist." 🍋
