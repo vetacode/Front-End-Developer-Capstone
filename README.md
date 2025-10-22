@@ -1,70 +1,145 @@
-# Getting Started with Create React App
+# 🍋 Little Lemon - Frontend Capstone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Little Lemon Banner](./assets/images/preview-banner.png)
 
-## Available Scripts
+A **modern restaurant web application** built as part of the Frontend Developer Capstone project.  
+The website allows users to explore menus, reserve tables, and order online — featuring a clean UI, responsive layout, and smooth booking flow.
 
-In the project directory, you can run:
+🔗 **Live Demo:** [https://vetacode-frontend-capstone.vercel.app/](https://vetacode-frontend-capstone.vercel.app/)
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🖼️ Preview
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+| Home Page | Booking Page | Confirmation Page |
+|------------|---------------|-------------------|
+| ![Home](./assets/images/home-preview.png) | ![Booking](./assets/images/booking-preview.png) | ![Confirmation](./assets/images/confirmation-preview.png) |
 
-### `npm test`
+*(You can replace these placeholders with your actual screenshots from `/assets`.)*
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## ✨ Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- 🏠 **Home Page:** Introduces the restaurant, location, and highlights signature dishes.  
+- 📅 **Booking Form:** Users can reserve tables with date and time validation.  
+- ✅ **Confirmation Page:** Displays booking details upon submission.  
+- 🔐 **Login & Logout System:** Basic session management.  
+- 📱 **Fully Responsive:** Optimized for desktop, tablet, and mobile devices.  
+- 💡 **Reusable Components:** Built with modular React architecture.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🧩 Tech Stack
 
-### `npm run eject`
+| Category | Tools |
+|-----------|--------|
+| **Framework** | React.js |
+| **Styling** | CSS3 |
+| **Routing** | React Router |
+| **State Management** | React Context API |
+| **Deployment** | Vercel |
+| **Testing** | React Testing Library, Jest |
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🗂️ Folder Structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+src/
+│
+├── assets/
+│ ├── about/
+│ ├── booking/
+│ ├── images/
+│ ├── specials/
+│ ├── testimonials/
+│ └── restaurantfood.jpg
+│
+├── components/
+│ ├── About/
+│ ├── BookingForm/
+│ ├── Card/
+│ ├── ConfirmedBooking/
+│ ├── Footer/
+│ ├── Hero/
+│ ├── Modal/
+│ ├── NavBar/
+│ ├── Specials/
+│ └── Testimonials/
+│
+├── pages/
+│ ├── BookingPage.js
+│ └── ConfirmedBooking.js
+│
+├── Hooks/
+│ └── LogContext.js
+│
+├── utils/
+│ └── temp.js
+│
+├── App.js
+├── index.js
+├── data.js
+└── App.css
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## ⚙️ Installation & Setup
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To run this project locally:
 
-### Code Splitting
+```bash
+# Clone the repository
+git clone https://github.com/vetacode/frontend-capstone.git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Navigate to the project folder
+cd frontend-capstone
 
-### Analyzing the Bundle Size
+# Install dependencies
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# Start the development server
+npm start
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Your app will be live at http://localhost:3000/
+ 🚀
 
-### Advanced Configuration
+🚀 Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+This project is deployed on Vercel for continuous integration and easy hosting.
+You can check the live version here:
+👉 https://vetacode-frontend-capstone.vercel.app/
 
-### Deployment
+🧠 Learning Outcomes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This project demonstrates:
 
-### `npm run build` fails to minify
+Applying React best practices (props, state, hooks)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Implementing form validation
+
+Managing UI state via Context API
+
+Writing unit tests with Jest
+
+Deploying React apps on Vercel
+
+💛 Author
+
+👤 Fiqrie
+Front-End Developer
+🌐 Portfolio
+
+🐙 GitHub
+
+📸 Image Template
+
+To update screenshots, place your images inside /src/assets/images/ and reference them in the table above like this:
+
+![Home Preview](./src/assets/images/home.png)
+
+🏁 Enjoy exploring Little Lemon!
+
+"Fresh ingredients, classic taste — served with a modern twist." 🍋
