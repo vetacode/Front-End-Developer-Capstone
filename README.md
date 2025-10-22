@@ -45,6 +45,7 @@ The website allows users to explore menus, reserve tables, and order online — 
 
 ## 🗂️ Folder Structure
 
+```
 src/
 │
 ├── assets/
@@ -81,8 +82,7 @@ src/
 ├── index.js
 ├── data.js
 └── App.css
-
-
+```
 ---
 
 ## ⚙️ Installation & Setup
